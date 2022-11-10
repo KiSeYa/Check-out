@@ -1,0 +1,205 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PURRFECT</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <!-- Bootstrap Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="style5.css">
+
+  <!-- Fonts  Awesome-->
+  <script src="https://kit.fontawesome.com/905a42ee69.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Title -->
+
+  <section id="Title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><span style="color:#7AC7E6"> PURR</span><span style="color:#FFDB58">FECT</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#brigette" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="brigette">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pet
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-paw"></i>  Cat</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="fas fa-paw"></i>  Dog</a></li>
+          </ul>
+        </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacts">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#About_Us">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+  </section>
+
+<div class="Shop-cart">
+
+
+  <h3>Purrfect Cart</h3>
+
+  <div class="shopping-cart">
+
+    <div class="column-labels">
+      <label class="product-image">Image</label>
+      <label class="product-details">Product</label>
+      <label class="product-price">Price</label>
+      <label class="product-quantity">Quantity</label>
+      <label class="product-removal">Remove</label>
+      <label class="product-line1-price">Total</label>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="images/pidegree.png" alt="image1">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Pidegree Dog Food</div>
+        <p class="product-description">Type: Babies</p>
+      </div>
+      <div class="product-price">300.00</div>
+      <div class="product-quantity">
+        <input type="number" value="2" min="1">
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">600.00</div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        <img src="images/whiskas.png" alt="image2">
+      </div>
+      <div class="product-details">
+        <div class="product-title">Whiskas (Adult)</div>
+        <p class="product-description">Type: Adult</p>
+      </div>
+      <div class="product-price">320.00</div>
+      <div class="product-quantity">
+        <input type="number" value="1" min="1">
+      </div>
+      <div class="product-removal">
+        <button class="remove-product">
+          Remove
+        </button>
+      </div>
+      <div class="product-line-price">320.00</div>
+    </div>
+
+    <div class="totals">
+      <div class="totals-item">
+        <label>Subtotal</label>
+        <div class="totals-value" id="cart-subtotal">920.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Tax (5%)</label>
+        <div class="totals-value" id="cart-tax">31.00</div>
+      </div>
+      <div class="totals-item">
+        <label>Shipping</label>
+        <div class="totals-value" id="cart-shipping">45.00</div>
+      </div>
+      <div class="totals-item totals-item-total">
+        <label>Grand Total</label>
+        <div class="totals-value" id="cart-total">996.00</div>
+      </div>
+    </div>
+
+        <button class="checkout">Checkout</button>
+
+  </div>
+
+</div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <hr class="line">
+      <div class="ft-box">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-ft">
+            <p class="ft-title">ABOUT</p>
+            <p class="ft-text"> PURFFECT is a pet shop ecommerce</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-ft">
+            <p class="ft-title">POLICY</p>
+            <p class="ft-text">Software Policy</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-ft">
+            <p class="ft-title">INFORMATION</p>
+            <p class="ft-text"> Terms and Conditons</p>
+          </div>
+          <div class="col-lg-3 col-md-3  col-ft">
+            <p class="ft-title"> CONNECT WITH US</p>
+            <i class="fa-brands fa-facebook-f ft-icon fa-1x"></i>
+            <i class="fa-brands fa-instagram ft-icon fa-1x "></i>
+            <i class="fa-brands fa-twitter ft-icon fa-1x"></i>
+            <i class="fa-solid fa-at ft-icon fa-1x"></i>
+            <i class="fa-brands fa-discord ft-icon fa-1x"></i>
+          </div>
+        </div>
+        <hr>
+        </hr>
+
+        <div class="copyright-box">
+          <p class="copyright"> ©Brigette Jane Hernandez, 2022 PURFFECT </p>
+        </div>
+      </div>
+      <hr class="line">
+      </div>
+    </footer>
+</body>
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</html>
